@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>transition-timing-function 快慢属性</title>
+	<style>
+		div{
+			width: 100px;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			background-color: #00DCFF;
+			margin-bottom: 10px;
+			transition-property: width;
+			transition-duration: 2s;
+			transition-delay: 0;
+		}
+		#div1{transition-timing-function: linear}
+		#div2{transition-timing-function: ease;}
+		#div3{transition-timing-function: ease-in;}
+		#div4{transition-timing-function: ease-out;}
+		#div5{transition-timing-function: ease-in-out;}
+		div:hover{
+			width:500px;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="div1">linear</div>
+	<div id="div2">ease</div>
+	<div id="div3">easein</div>
+	<div id="div4">ease-out</div>
+	<div id="div5">ease-in-out</div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background-color: #0D3462;
+		}
+/*		舞台*/
+		#piclist{
+			width:760px;
+			height: 220px;
+			margin: 100px auto;
+		}
+		.picbox{
+			float: left;
+			position: relative;
+			width: 170px;
+			height: 190px;
+			margin: 10px;
+			transform-style: preserve-3d;
+			transition: 1.5s;
+		}
+/*		鼠标悬停时正面背面翻转*/
+		.picbox:hover{
+			transform: rotateY(180deg);
+		}
+		.face{
+			position: absolute;
+			width: 170px;
+			height: 190x;
+		}
+		.front{
+			border: 2px solid #4b2518;
+		}
+		.back{
+/*			让他成为i背面开始显示正面*/
+			transform: rotateY(180deg);
+			background-color: #4b2518;
+			border: 2px solid #fff;
+		}
+		.back h3{
+			color:#fff;
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="container">
+		<div id="piclist">
+			<div class="picbox">
+				<div class="face front">
+					<img src="images/2.jpg">
+				</div>
+				<div class="face back">
+				<h3>浓缩咖啡</h3>
+				</div>
+			</div>
+		
+			<div class="picbox">
+				<div class="face front">
+					<img src="images/3.jpg">
+				</div>
+				<div class="face back">
+					<h3>浓缩咖啡</h3>
+				</div>
+			</div>
+		
+			<div class="picbox">
+				<div class="face front">
+					<img src="images/4.jpg">
+				</div>
+				<div class="face back">
+					<h3>浓缩咖啡</h3>
+				</div>
+			</div>
+		
+			<div class="picbox">
+				<div class="face front">
+					<img src="images/5.jpg">
+				</div>
+				<div class="face back">
+					<h3>浓缩咖啡</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

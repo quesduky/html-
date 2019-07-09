@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>3d变换</title>
+	<style>
+		#stage{
+			width:450px;
+			height: 300px;
+			perspective: 100px;
+		}
+		.box{
+			width: 150px;
+			height: 150px;
+			float: left;
+			transition: linear 1s;
+			transform-style: preserve-3d;
+		}
+		img{
+			width:150px;
+			height: 150px;
+		}
+		.x:hover{
+			transform: rotateX(60deg);
+		}
+		.y:hover{
+			transform: rotateX(60deg);
+		}
+		.z:hover{
+			transform: rotateX(60deg);
+		}
+	</style>
+</head>
+
+<body>
+	<div id="stage">
+		<div class="box x"><img src="images/3.jpg"></div>
+		<div class="box y"><img src="images/3.jpg"></div>
+		<div class="box z"><img src="images/3.jpg"></div>
+	</div>
+</body>
+</html>
