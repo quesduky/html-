@@ -1,0 +1,128 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin：0；
+	padding: 0;
+}
+body{
+	font-size:16px;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	color: #F8F8F8;
+}
+#container{
+	margin: 0 auto ;
+	width: 900px;
+}
+#header{
+	height: 220px;
+	margin-bottom: 5px;
+	position: relative;
+}
+#nav{
+	width:900px;
+	height: 30px;
+	background: #6659FE;
+	line-height: 30px;
+	text-align: center;
+	margin-bottom: 5px;
+}
+#nav a{
+	font-size: 18px;
+	text-decoration: none;
+}
+a:link{
+	color:#fff;
+}
+a:hover{
+	color: #F9FF00;
+}
+#main{
+	height: 860px;
+}
+#aside{
+	width: 300px;
+	height: 680px;
+	background: #1298FF;
+	float: left;
+	text-align: center;
+	color: #000000;
+	font-size: 15px;
+}
+#imglist{
+	width: 130px;
+	margin: 0 auto;
+}
+.polaroid{
+	width:85px;		
+	padding: 10px;
+	background-color: #eee;
+	border:1px solid #BFBFBF;
+	box-shadow:2px 2px 4px #aaa;
+	border-radius: 5px;
+}
+.rotate_left{
+	-ms-transform:rotate(7deg); /* IE 9 */
+	-moz-transform:rotate(7deg); /* Firefox */
+	-webkit-transform:rotate(7deg); /* Safari and Chrome */
+	-o-transform:rotate(7deg); /* Opera */
+	transform:rotate(7deg);
+}
+.rotate_right{
+	-ms-transform:rotate(-7deg); /* IE 9 */
+	-moz-transform:rotate(-7deg); /* Firefox */
+	-webkit-transform:rotate(-7deg); /* Safari and Chrome */
+	-o-transform:rotate(-7deg); /* Opera */
+	transform:rotate(-7deg);
+}
+#imglist img{
+	height: 95px;
+	width: 85px;
+	margin: 0 auto;
+	font-size: 0;
+}
+#imglist img:hover{
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	transform: scale(1.2);
+}
+#content{
+	width: 595px;
+	height: 860px;
+	background: #1BFFEA;
+	float: right;
+	margin-bottom: -50px;
+}
+.subcont{
+	width: 570px;
+	margin: 10px auto;
+	clear: both;
+}
+.subcont img{
+	margin: 5px;
+	padding: 5px;
+	float: left;
+	border: 1px dashed #000;
+}
+.subtext{
+	color: #4D292A;
+	font-size: 16px;
+}
+#footer{
+	height: 30px;
+	background: #A9A9A9;
+	text-align: center;
+	line-height: 30px;
+	color: #000;
+}
+#l-fix{
+	position: fixed;
+	top: 220px;
+	left: 100px;
+}
+#l-fix img{
+	height: 130px;
+	width: 130px;
+}
