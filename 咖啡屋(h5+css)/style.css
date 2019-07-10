@@ -5,6 +5,7 @@
 	margin：0；
 	padding: 0;
 }
+/* 初始化 */
 body{
 	font-size:16px;
 	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
@@ -61,6 +62,7 @@ a:hover{
 	box-shadow:2px 2px 4px #aaa;
 	border-radius: 5px;
 }
+/* 中部左侧盒子设置宽高、圆角边框 */
 .rotate_left{
 	-ms-transform:rotate(7deg); /* IE 9 */
 	-moz-transform:rotate(7deg); /* Firefox */
@@ -68,6 +70,7 @@ a:hover{
 	-o-transform:rotate(7deg); /* Opera */
 	transform:rotate(7deg);
 }
+/* 设置奇数图片顺时针偏移 */
 .rotate_right{
 	-ms-transform:rotate(-7deg); /* IE 9 */
 	-moz-transform:rotate(-7deg); /* Firefox */
@@ -75,6 +78,7 @@ a:hover{
 	-o-transform:rotate(-7deg); /* Opera */
 	transform:rotate(-7deg);
 }
+/* 设置偶数图片逆时针偏移 */
 #imglist img{
 	height: 95px;
 	width: 85px;
@@ -88,6 +92,7 @@ a:hover{
 	-o-transform: scale(1.2);
 	transform: scale(1.2);
 }
+/* 图片点击后放大效果 */
 #content{
 	width: 595px;
 	height: 860px;
@@ -126,3 +131,4 @@ a:hover{
 	height: 130px;
 	width: 130px;
 }
+/* 左侧图片固定 */
