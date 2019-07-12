@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script type="text/javascript">
+		// 1用户输入商品价格，商品数量和应收金额
+		// 2判断用户购买的金额是否>=500，是：享受8折优惠。否：不打折
+		// 3判断用户给的金额是否足够；够的话输出应找金额，不够的话提示用户金额不够
+
+		// 1声明商品价格和商品数量变量和收款金额
+		var price,num,money;
+		// 2声明商品总价和应找金额
+		var sum,change;
+		// 3提示用户输入商品价格和商品数量
+		price = prompt("请输入商品的价格");
+		num = prompt("请输入商品的数量");
+		// 4计算商品和
+		sum = price*num;
+		// 判断金额
+		if(sum>=500){
+			alert("您已经享受8折优惠");
+			sum = sum*0.8;
+		}
+		alert("应收您现金"+sum+"元");
+		// 输入用户给的金额
+		money = prompt("请输入您的付款金额");
+		
+		// 判断金额是否大于等于500，并给出提示
+		if(money>=sum){
+			change = money-sum;
+			alert("应找您"+change+"元");
+		}else{
+			alert("您给的金额不够");
+		}
+	</script>
+</body>
+</html>
