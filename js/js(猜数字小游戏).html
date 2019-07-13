@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+
+<body>
+	<script type="text/javascript">
+//	猜数字小游戏
+//	系统生成一个100以内随机数
+	var n = parseInt(Math.random()*100);
+//	循环判断，大于提示用户数字大了 小于提示用户数字小了  等于提示猜对了
+	do{
+//		提示用户输入猜的数字
+		input = prompt("请输入您猜的数字");
+		if(input > n){
+				alert("您猜的数字大了");
+		   }else if(input < n){
+				alert("您输入的数字小了");	
+		   }else{
+			   	alert("您猜对了");
+		   }
+	}while(input != n);
+	alert ("游戏结束");
+	</script>
+</body>
+</html>
