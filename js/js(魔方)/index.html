@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>魔方</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background-color: #F38A8B;
+		}
+		.container{
+			width: 300px;
+			height: 300px;
+/*			border: 1px solid #000;*/
+/*			div设置居中*/
+			margin: 200px auto;
+		}
+		.box{
+			width: 300px;
+			height: 300px;
+/*			控制子元素3d转换*/
+			transform-style: preserve-3d;
+/*			设置盒子旋转*/
+			transform: rotateX(45deg) rotateY(45deg);
+			animation: rotate 10s linear infinite;
+		}
+		@keyframes rotate{
+			0%{
+				transform:rotatex(-360deg) rotatey(-360deg) rotatez(-360deg);
+			}
+			100%{
+				transform:rotatex(360deg) rotatey(360deg) rotatez(360deg);
+			}
+		}
+		.box-page{
+			width: 300px;
+			height: 300px;
+/*			位置初始化*/
+			position: absolute;
+			transform-style: preserve-3d;
+		}
+		.box-page div:nth-child(1),.box-page div:nth-child(3),.box-page div:nth-child(7),.box-page div:nth-child(9){
+			animation: s3 8s linear infinite;
+		}
+		.box-page div:nth-child(5){
+			animation: s1 8s linear infinite;
+		}
+		.box-page div:nth-child(2),.box-page div:nth-child(4),.box-page div:nth-child(6),.box-page div:nth-child(8){
+			animation: s1 8s linear infinite;
+		}
+		@keyframes s1{
+			20%{
+				transform: rotateX(0deg);
+				background-size: 300px 300px;
+			}
+			40%{
+				/*background-image: url("img/img.jpg");*/
+				transform: rotateX(540deg);
+				background-size: 100px 100px;
+			}
+			60%{
+				/*background-image: url("img/img.jpg");*/
+				transform: rotateX(540deg);
+				background-size: 100px 100px;
+			}
+			80%{
+				transform: rotateX(0deg);
+				background-size: 300px 300px;
+			}
+		}
+		@keyframes s2{
+			0%{
+				transform: rotateX(90deg);
+			}
+			100%{
+				transform: rotateX(-90deg);
+			}
+		}
+		@keyframes s3{
+			0%{
+				transform: translateZ(0px) scale(1) rotate(0deg);
+			}
+			20%{
+				transform: translateZ(300px) scale(0) rotate(720deg);
+			}
+			90%{
+				transform: translateZ(300px) scale(0) rotate(720deg);
+			}
+			100%{
+				transform: translateZ(0px) scale(1) rotate(0deg);
+			}
+		}
+		.top{
+/*			上面*/
+/*			background-color: red;*/
+			transform: translateZ(150px);
+		}
+		.down{
+/*			下面*/
+/*			background-color: green;*/
+			transform: translateZ(-150px);
+		}
+		.left{
+/*			左面*/
+/*			background-color: yellow;*/
+			transform: translateX(-150px) rotateY(90deg);
+		}
+		.right{
+/*			右面*/
+/*			background-color: blue;*/
+			transform: translateX(150px) rotateY(90deg);
+		}
+		.front{
+/*			前面*/
+/*			background-color: pink;*/
+			transform: translateY(150px) rotateX(-90deg);
+		}
+		.after{
+/*			后面*/
+/*			background-color: orange;*/
+			transform: translateY(-150px) rotateX(90deg);
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div class="box">
+			<div class="box-page top"></div>
+			<div class="box-page down"></div>
+			<div class="box-page left"></div>
+			<div class="box-page right"></div>
+			<div class="box-page front"></div>
+			<div class="box-page after"></div>
+		</div>
+	</div>
+<script type="text/javascript">
+	var arr = document.querySelectorAll(".box>div");
+//	遍历6个面
+	for(var n=0; n<arr.length; n++){
+//		外层循环 遍历行 r
+		for(var r=0; r<3; r++){
+//			遍历列 c
+			for(var c=0; c<3; c++){
+				var divs= document.createElement("div");
+//				设置新元素样式
+				divs.style.cssText = "width:100px; height:100px; border:2px solid #fff; box-sizing:border-box; background-image: url(img/a"+n+".jpg);background-size:300px 300px;position:absolute;";
+//				追加样式到面
+				arr[n].appendChild(divs);
+				
+				divs.style.left = c*100+"px";
+				divs.style.top = r*100+"px";
+				
+				divs.style.backgroundPositionX =-c*100+"px";
+				divs.style.backgroundPositionY =-r*100+"px";
+				
+			}
+			
+		}
+	}
+</script>
+</body>
+</html>
