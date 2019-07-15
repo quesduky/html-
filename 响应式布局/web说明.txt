@@ -1,0 +1,6 @@
+web响应式布局学习制作
+https://v3.bootcss.com/   bootstrap中文网址
+起步引入css样式和boots  引入jQuery
+nav 顶部导航使用 组件导航条样式
+container  使用栅格系统  右侧三个区域使用组件 列表组
+	左侧9个区域使用巨幕组件
