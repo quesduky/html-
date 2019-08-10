@@ -1,0 +1,484 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0px;
+	padding: 0px;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration:none;
+	color: #666666;
+}
+.right{
+	float: right;
+}
+.left{
+	float: left;
+}
+/*全局css样式 设置页面居中*/
+.container{
+	width: 1280px;
+	margin: 0 auto;
+}
+#top{
+	width: 100%;
+	height: 5px;
+	background-color: #00925F;
+}
+
+#header{
+	width: 100%;
+	height: 30px;
+	background-color: #2D2D2D;
+}
+#h_left{
+	float: left;
+	margin: 0 auto;
+	line-height: 30px;
+}
+#xlblog{
+	width:20px;
+	height: 20px;
+	float: left;
+	margin: 5px 20px 0px 150px;
+	padding-right: 20px;
+	background: url("../img/icons.png") no-repeat -47px -95px;
+}
+#txblog{
+	width:20px;
+	height: 20px;
+	float: left;
+	margin-right: 20px;
+	margin-top: 5px;
+	background:url("../img/icons.png")no-repeat -27px -92px;
+}
+#tel{
+	color:#17925F;
+	float: left;
+	font-size: 14px;
+}
+#h_list{
+	float: right;
+	margin: 0 auto;
+	line-height: 30px;
+}
+.h_right{
+	height: 20px;
+	float: left;
+	border-right: 1px solid #B2B2B2;
+	margin-left: 25px;
+	padding-right: 25px;
+}
+.h_right li{
+	display: inherit;
+}
+.h_right a{
+	color: #eeeee6;
+}
+.h_right a:hover{
+	color: #00925f;
+}
+#h_list_one{
+	padding-right: 250px;
+	border-right: none;
+}
+
+
+/*导航栏部分样式*/
+#nav{
+	height: 90px;
+	background-color: #eeeeee;
+}
+/*设置li元素一行显示*/
+#nav li{
+	float: left;
+}
+
+#nav li a{
+	color: #666666;
+	margin: 0px 20px;
+	font-weight: bolder;
+	line-height: 90px;
+}
+#nav li a:hover{
+	color: #00925f;
+} 
+/*网页轮播部分*/
+#banner{
+        height:630px;
+}
+        .swiper-container {
+            width: 100%;
+            height: 632px;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+/*明星机型部分*/
+#star{
+	height: 700px;
+	background-color: #eee;
+
+}
+.star_top{
+	text-align: center;
+	margin: 10px 0px;
+}
+#star ul{
+	width: 1265px;
+	margin: 0 auto;
+}
+#star li{
+	width: 280px;
+	border-bottom: 4px solid #DFDFDF;
+	float: left;
+	transition: all .4s;
+}
+#star li:hover{
+	border-bottom: 4px solid #00925F;
+	transform: translateY(-15px);
+}
+#star li img{
+	width: 280px;
+}
+#star li h2{
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	margin: 10px 0px;
+}
+#star li p{
+	font-size: 12px;
+	color: #BDBDBD;
+	text-align: center;
+	margin: 10px 0px;
+}
+#star li span{
+	width: 13px;
+	height: 13px;
+	display: inline-block;
+	vertical-align:middle;
+	background: url("../img/icons-1.png") no-repeat -177px -1014px;
+}
+#star .line{
+	width: 0px;
+	height: 450px;
+	border-left: 1px solid #EAEAEA;
+	margin: 0px 15px;
+}
+#star .money{
+	color: #00925F;
+	font-size: 13px;
+}
+
+/*精选配件样式部分 左侧*/
+#accessory{
+	height: 960px;
+	background-color: #F6F6F6;
+/*	清除浮动*/
+	overflow: hidden;
+}
+#accessory .acces_top{
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.acces_left{
+	width: 600px;
+	height: 920px;
+/*	border: 1px solid #000;*/
+	float: left;
+}
+#accessory .acces_left>div{
+	float: left;
+}
+#accessory .acces_one{
+	width: 280px;
+	margin: 0px 20px;
+	
+}
+#accessory .acces_one img{
+	width: 280px;
+	border-bottom: 0px solid #C0C0C0;
+}
+#accessory .acces_two{
+	width: 280px;
+	height: 280px;
+/*	margin: 0px 20px;*/
+	padding: 20px;
+	background-color: #fff;
+	border: 2px solid #EAEAEA;
+	box-sizing: border-box;
+
+}
+#accessory .acces_two li{
+	display: inline;
+	float: left;
+	text-align: center;
+	line-height: 40px;
+	width: 100px;
+	height: 40px;
+}
+#accessory .acces_two li:hover{
+	color:#009A52;
+}
+#accessory .acces_two .line{
+	width: 150px;
+	border-bottom: 1px solid #ccc;
+	clear: both;
+	margin: 0px 30px;
+}
+#accessory .acces_two p:first-child{
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	border-bottom: 1px solid #ccc; 
+	padding-bottom: 10px;
+}
+#accessory .acces_two p:last-child{
+	font-size: 14px;
+	text-align: center;
+	margin-top: 20px;
+}
+#accessory .acces_two p:last-child:hover{
+	color: #009A52;
+}
+#accessory .acces_two span{
+	width: 13px;
+	height: 13px;
+	display: inline-block;
+	vertical-align:middle;
+	background: url("../img/icons-1.png") no-repeat -177px -1014px;
+}
+#accessory .acces_three{
+	width: 280px;
+	height: 280px;
+	padding: 18px 0px;
+	padding-bottom: 0px;
+	border-bottom: 2px solid #C0C0C0;
+}
+#accessory .acces_three img{
+	width: 280px;
+	height: 280px;
+}
+#accessory .acces_four{
+	height: 210px;
+	width: 580px;
+	border-bottom: 2px solid #ccc;
+	text-align: center;
+	margin: 5px 20px
+}
+#accessory .acces_four img{
+	height: 210px;
+	width: 580px;
+}
+#accessory .acces_left div{
+	transition: all .5s;
+}
+#accessory .acces_left div:hover{
+	border-bottom: 2px solid #009A52;
+	transform: translateY(-15px);
+}
+/*精选配件样式部分 右侧*/
+#accessory .acces_right{
+	width: 600px;
+}
+#accessory .acces_right div{
+	float: left;
+	margin:  20px;
+	border-bottom: 2px solid #EAEAEA;
+	transition: all 0.3s;
+}
+#accessory .acces_right div{
+	float: left;
+	margin: 10px 10px;
+	margin-top: 0px;
+	border-bottom: 2px solid #EAEAEA;
+	transition: all .5s;
+}
+#accessory .acces_right div:hover{
+	border-bottom: 2px solid #009A52;
+	transform: translateY(-15px);
+}
+#accessory .acces_right img{
+	width: 250px;
+}
+#accessory .acces_right div:first-child img{
+	width: 520px;
+}
+/*网页探索欧珀部分样式*/
+#world{
+	background-color: #EAEAEA;
+	clear: both;
+}
+#world .world_main{
+
+}
+#world .world_top{
+	height: 50px;
+	width: 369px;
+/*	text-align: center;*/
+	margin: 0px auto;
+	margin-bottom: 20px;
+}
+#world .world_left{
+	width: 800px;
+	margin-top: 20px;
+} 
+#world .world_left div{
+	float: left;
+	margin: 2px 10px;
+	box-sizing: border-box;
+	border-bottom: 3px solid #EAEAEA;
+	transition: all .4s;
+}
+#world .world_left div:hover{
+	border-bottom: 3px solid #009A52;
+	transform: translateY(-10px);
+}
+#world .world_right{
+	width: 400px;
+	background-color: #fff;
+	margin-top: 20px;
+	
+}
+#world .world_title{
+	width: 380px;
+	height: 60px;
+	float: left;
+	margin-bottom: 20px;
+	clear: both;
+}
+#world .world_title div{
+	float: left;
+	text-align: center;
+	line-height: 60px;
+	border-top: 3px solid #EAEAEA;
+	transition: all .2s;
+}
+#world .world_title div:hover{
+	background-color: #fff;
+	border-top: 3px solid #009A52;
+}
+
+#world .news{
+	width: 180px;
+	height: 60px;
+	background-color: #EAEAEA;
+}
+#world .weibo{
+	width: 180px;
+	height: 60px;
+	background-color: #EAEAEA;
+}
+#world .world_right .world_list{
+
+	margin-top: 80px;
+	margin-left: -10px;
+	border: 1px solid #fff
+}
+#world .world_right ul{
+	width: 360px;
+	height: 90px;
+	background-color: #EAEAEA;
+	margin-top: 20px;
+	margin-left: 10px;
+	position: relative;
+}
+#world .world_right li{
+	clear: both;
+	position: relative;
+}
+#world .world_right ul dd{
+	position: absolute;
+	left: 140px;
+	top:20px;
+	font-size: 14px;
+}
+
+/*网页服务内容部分样式*/
+#server{
+	width: 1210px;
+	text-align: center;
+	margin: 0 auto;
+	height: 140px;
+	background-color: #fff;
+	clear: both;
+	border-bottom: 1px solid #000;
+}
+#server li{
+	width: 200px;
+	height: 100px;
+/*	border: 1px solid #000;*/
+	position: relative;
+	float: left;
+	margin: 40px 20px;
+	transition: all .3s;
+}
+#server li:hover{
+	transform: translateY(-10px)
+}
+#server dt{
+	width: 41px;
+	height: 41px;
+	background: url("../img/icons.png") no-repeat 0px -44px;
+	position: absolute;
+	top: 30px;
+	left: 10px;
+}
+#server ul .text1{
+	font-weight: bold;
+	position: absolute;
+	top: 30px;
+	left: 61px;
+}
+#server ul .text2{
+	font-size: 12px;
+	color: #AAA;
+	position: absolute;
+	top: 55px;
+	left: 61px;
+}
+
+/*网页底部版权部分样式*/
+#footer{
+	height: 40px;
+	background-color: #2D2D2D;
+	clear: both;
+}
+#footer p{
+	line-height: 40px;
+}
+#footer img{
+	margin-left: 20px;
+}
+#footer p span{
+	color: #828282;
+	margin: 0px 430px 0px 20px;
+}
+#footer p a{
+	color: #fff;
+	margin: 0px 10px;
+}
+#footer p a:hover{
+	color: #00925F;
+}
